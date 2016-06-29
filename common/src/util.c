@@ -3,6 +3,7 @@
  */
 
 #include "../common.h"
+#include <sys/time.h>
 
 /* ************ SWAPs ************ */
 
@@ -77,4 +78,56 @@ void swapBool(bool *a, bool *b){
     bool tmp = *a;
     *a = *b;
     *b = tmp;
+}
+
+long int getMicroTime(){
+    struct timeval now;
+    gettimeofday(&now, NULL);
+    return (now.tv_sec*1e6 + now.tv_usec);
+}
+
+bool writeOutputFile(String fileName, int data[], int size){
+
+    FILE * file;
+    int countLine = 0;
+
+    file = fopen (getCStr(fileName) , "w+");
+
+    if (file == NULL){
+        return false;
+    }
+
+    for(int i = 0; i < size; i++){
+
+        countLine++;
+        fprintf(file, "%d ", data[i]);
+
+        if(countLine >= 30){
+            fprintf(file, "\n");
+            countLine = 0;
+        }
+    }
+
+    fclose(file);
+    return true;
+}
+
+int readOutputFile(String fileName, int data[], int bufferMax){
+
+    int i, count = 0;
+    FILE * file;
+    file = fopen (getCStr(fileName) , "r");
+
+    if (file == NULL){
+        return -1;
+    }
+
+    do{
+        fscanf(file, "%d", &i);
+        data[count++] = i;
+        if(count >= bufferMax) break;
+    }while (!feof(file));
+
+    fclose(file);
+    return count;
 }

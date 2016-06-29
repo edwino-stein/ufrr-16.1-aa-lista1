@@ -36,4 +36,11 @@
                                       bool *: swapBool, \
                                       default: printInt)(a, b)
 
+    /* ************ Time ************ */
+    long int getMicroTime();
+
+    /* ************ FileOutput ************ */
+    bool writeOutputFile(String fileName, int data[], int size);
+    int readOutputFile(String fileName, int data[], int bufferMax);
+
 #endif
