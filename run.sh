@@ -92,15 +92,36 @@ case $1 in
         fi
     ;;
 
-     "generate.c")
-         bash -c "$invocation generate.c";
-         bash -c "${buildDir}generate $2 $3";
-     ;;
+    "questao4")
+        bash -c "$invocation questao4.c";
+        echo "Executando o programa questao4..."
+        echo;
+        bash -c "${buildDir}questao4";
+    ;;
 
-     "generate.")
-         bash -c "$invocation generate.c";
-         bash -c "${buildDir}generate $2 $3";
-     ;;
+    "questao4.")
+        bash -c "$invocation questao4.c";
+        echo "Executando o programa questao4..."
+        echo;
+        bash -c "${buildDir}questao4";
+    ;;
+
+    "questao4.c")
+        bash -c "$invocation questao4.c";
+        echo "Executando o programa questao4..."
+        echo;
+        bash -c "${buildDir}questao4";
+    ;;
+
+    "generate.c")
+        bash -c "$invocation generate.c";
+        bash -c "${buildDir}generate $2 $3";
+    ;;
+
+    "generate.")
+        bash -c "$invocation generate.c";
+        bash -c "${buildDir}generate $2 $3";
+    ;;
 
     "generate")
         bash -c "$invocation generate.c";
@@ -108,7 +129,7 @@ case $1 in
     ;;
 
  	*)
- 		echo "Opções: questao5 | generate."
+ 		echo "Opções: questao4 | questao8 | questao5 | generate."
  		exit 1;
  	;;
 esac
