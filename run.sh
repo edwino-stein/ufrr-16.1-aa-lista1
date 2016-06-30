@@ -56,6 +56,42 @@ case $1 in
         fi
     ;;
 
+    "questao8")
+        bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo;
+        result=$(bash -c "${buildDir}questao8 $2 $3 $4");
+        if [ $? -eq 0 ]; then
+            bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+        else
+            echo "Erro na execução:";
+            echo "$result";
+        fi
+    ;;
+
+    "questao8.")
+        bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo;
+        result=$(bash -c "${buildDir}questao8 $2 $3 $4");
+        if [ $? -eq 0 ]; then
+            bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+        else
+            echo "Erro na execução:";
+            echo "$result";
+        fi
+    ;;
+
+    "questao8.c")
+        bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo;
+        result=$(bash -c "${buildDir}questao8 $2 $3 $4");
+        if [ $? -eq 0 ]; then
+            bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+        else
+            echo "Erro na execução:";
+            echo "$result";
+        fi
+    ;;
+
      "generate.c")
          bash -c "$invocation generate.c";
          bash -c "${buildDir}generate $2 $3";
