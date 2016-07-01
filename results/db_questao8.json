@@ -1,0 +1,86 @@
+{
+  "avltree_10000": {
+    "total": 36798478,
+    "times": 5
+  },
+  "avltree_100000": {
+    "total": 5428537343,
+    "times": 5
+  },
+  "rbtree_100000": {
+    "total": 180462,
+    "times": 5
+  },
+  "avltree_1000": {
+    "total": 233675,
+    "times": 5
+  },
+  "rbtree_1000": {
+    "total": 1087,
+    "times": 5
+  },
+  "rbtree_100": {
+    "total": 103,
+    "times": 5
+  },
+  "avltree_100": {
+    "total": 1717,
+    "times": 5
+  },
+  "avltree_50": {
+    "total": 455,
+    "times": 5
+  },
+  "rbtree_50": {
+    "total": 49,
+    "times": 5
+  },
+  "rbtree_25": {
+    "total": 28,
+    "times": 5
+  },
+  "avltree_25": {
+    "total": 146,
+    "times": 5
+  },
+  "avltree_10": {
+    "total": 36,
+    "times": 5
+  },
+  "rbtree_10": {
+    "total": 10,
+    "times": 5
+  },
+  "rbtree_500": {
+    "total": 538,
+    "times": 5
+  },
+  "avltree_500": {
+    "total": 53157,
+    "times": 5
+  },
+  "avltree_5000": {
+    "total": 8258902,
+    "times": 5
+  },
+  "rbtree_5000": {
+    "total": 6942,
+    "times": 5
+  },
+  "rbtree_50000": {
+    "total": 84290,
+    "times": 5
+  },
+  "avltree_50000": {
+    "total": 1248508007,
+    "times": 5
+  },
+  "rbtree_1000000": {
+    "total": 186284,
+    "times": 5
+  },
+  "rbtree_10000": {
+    "total": 13718,
+    "times": 5
+  }
+}

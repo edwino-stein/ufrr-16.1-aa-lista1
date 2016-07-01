@@ -1,0 +1,62 @@
+{
+  "insertionsort_30000": {
+    "total": 3291681,
+    "times": 5
+  },
+  "quicksort_30000": {
+    "total": 25996,
+    "times": 5
+  },
+  "mergesort_30000": {
+    "total": 59483,
+    "times": 5
+  },
+  "mergesort_10000": {
+    "total": 18624,
+    "times": 5
+  },
+  "quicksort_10000": {
+    "total": 7740,
+    "times": 5
+  },
+  "insertionsort_10000": {
+    "total": 363938,
+    "times": 5
+  },
+  "insertionsort_5000": {
+    "total": 93538,
+    "times": 5
+  },
+  "quicksort_5000": {
+    "total": 3670,
+    "times": 5
+  },
+  "mergesort_5000": {
+    "total": 9145,
+    "times": 5
+  },
+  "mergesort_500": {
+    "total": 830,
+    "times": 5
+  },
+  "quicksort_500": {
+    "total": 293,
+    "times": 5
+  },
+  "insertionsort_500": {
+    "total": 1000,
+    "times": 5
+  },
+  "insertionsort_100": {
+    "total": 44,
+    "times": 5
+  },
+  "quicksort_100": {
+    "total": 48,
+    "times": 5
+  },
+  "mergesort_100": {
+    "total": 173,
+    "times": 5
+  }
+}
