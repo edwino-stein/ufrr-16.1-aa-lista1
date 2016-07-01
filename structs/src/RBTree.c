@@ -1,5 +1,4 @@
 #include "../header/RBTree.h"
-#include "../../common/common.h"
 
 #include <stdio.h>
 #include <stdlib.h>
