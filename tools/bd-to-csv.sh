@@ -1,5 +1,8 @@
  #!/bin/sh
 
+echo "A ferramenta não está funcionando!";
+exit 1;
+
 dbFile=$1;
 cols=();
 rows=();
@@ -145,7 +148,7 @@ do
             cv="0";
         else
             total=$(echo "$c" | $jqBin ".total");
-            count=$(echo "$c" | $jqBin ".count");
+            count=$(echo "$c" | $jqBin ".times");
             cv=$(bc <<< "scale=3; $total/$count");
         fi
 
