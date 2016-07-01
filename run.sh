@@ -22,10 +22,12 @@ case $1 in
 
     "questao5")
         bash -c "$invocation questao5.c sorts/src/insertionSort.c sorts/src/quickSort.c sorts/src/mergeSort.c sorts/src/swap.c";
+        echo "Executando o programa questao5...";
         echo;
         result=$(bash -c "${buildDir}questao5 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao5.json $2_$4 $result";
+            echo "Foram ordenados $4 números em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -34,10 +36,12 @@ case $1 in
 
     "questao5.")
         bash -c "$invocation questao5.c sorts/src/insertionSort.c sorts/src/quickSort.c sorts/src/mergeSort.c sorts/src/swap.c";
+        echo "Executando o programa questao5...";
         echo;
         result=$(bash -c "${buildDir}questao5 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao5.json $2_$4 $result";
+            echo "Foram ordenados $4 números em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -46,10 +50,12 @@ case $1 in
 
     "questao5.c")
         bash -c "$invocation questao5.c sorts/src/insertionSort.c sorts/src/quickSort.c sorts/src/mergeSort.c sorts/src/swap.c";
+        echo "Executando o programa questao5...";
         echo;
         result=$(bash -c "${buildDir}questao5 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao5.json $2_$4 $result";
+            echo "Foram ordenados $4 números em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -58,10 +64,12 @@ case $1 in
 
     "questao8")
         bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo "Executando o programa questao8...";
         echo;
         result=$(bash -c "${buildDir}questao8 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+            echo "Foram inseridos $4 números em uma árvore $2 em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -70,10 +78,12 @@ case $1 in
 
     "questao8.")
         bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo "Executando o programa questao8...";
         echo;
         result=$(bash -c "${buildDir}questao8 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+            echo "Foram inseridos $4 números em uma árvore $2 em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -82,10 +92,12 @@ case $1 in
 
     "questao8.c")
         bash -c "$invocation questao8.c structs/src/binaryTree.c structs/src/avlTree.c structs/src/RBTree.c";
+        echo "Executando o programa questao8...";
         echo;
         result=$(bash -c "${buildDir}questao8 $2 $3 $4");
         if [ $? -eq 0 ]; then
             bash -c "$databaseupdater ${resultsDir}db_questao8.json $2_$4 $result";
+            echo "Foram inseridos $4 números em uma árvore $2 em ${result}ms.";
         else
             echo "Erro na execução:";
             echo "$result";
@@ -115,17 +127,23 @@ case $1 in
 
     "generate.c")
         bash -c "$invocation generate.c";
+        echo "Executando o programa generate...";
         bash -c "${buildDir}generate $2 $3";
+        echo "Foram gerados $2 números e salvos em $3.";
     ;;
 
     "generate.")
         bash -c "$invocation generate.c";
+        echo "Executando o programa generate...";
         bash -c "${buildDir}generate $2 $3";
+        echo "Foram gerados $2 números e salvos em $3.";
     ;;
 
     "generate")
         bash -c "$invocation generate.c";
+        echo "Executando o programa generate...";
         bash -c "${buildDir}generate $2 $3";
+        echo "Foram gerados $2 números e salvos em $3.";
     ;;
 
  	*)
